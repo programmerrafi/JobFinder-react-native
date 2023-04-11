@@ -4,6 +4,7 @@ import tw from 'twrnc';
 import Screen from '../components/shared/Screen';
 
 const HomeScreen = () => {
+  // nothing to added here
   return (
     <>
       <StatusBar backgroundColor="#FFF" barStyle="dark-content" />
