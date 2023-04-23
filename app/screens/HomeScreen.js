@@ -1,17 +1,24 @@
-import React from 'react';
-import {View, Text, StatusBar} from 'react-native';
+import {useState} from 'react';
+import {ScrollView, View, Text} from 'react-native';
 import tw from 'twrnc';
-import Screen from '../components/shared/Screen';
+
+import {COLORS, icons, images, SIZES} from '../constants';
+import {Nearbyjobs, Popularjobs, Welcome} from '../components';
 
 const HomeScreen = () => {
-  // nothing to added here
   return (
-    <>
-      <StatusBar backgroundColor="#FFF" barStyle="dark-content" />
-      <View style={tw`flex-1`}>
-        <Text style={tw``}>HomeScreen</Text>
+    <ScrollView showsVerticalScrollIndicator={false}>
+      <View
+        style={{
+          flex: 1,
+          padding: SIZES.medium,
+          backgroundColor: COLORS.lightWhite,
+        }}>
+        <Welcome />
+        <Popularjobs />
+        <Nearbyjobs />
       </View>
-    </>
+    </ScrollView>
   );
 };
 
