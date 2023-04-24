@@ -5,6 +5,7 @@ import {SafeAreaView, StatusBar} from 'react-native';
 import {COLORS, icons, images, SIZES} from '../constants';
 
 import {ScreenHeaderBtn} from '../components';
+import SearchScreen from '../screens/SearchScreen';
 
 const Stack = createStackNavigator();
 
@@ -27,6 +28,7 @@ const MainNavigator = () => {
             ),
           }}>
           <Stack.Screen name="HomeScreen" component={HomeScreen} />
+          <Stack.Screen name="SearchScreen" component={SearchScreen} />
         </Stack.Navigator>
       </SafeAreaView>
     </>
